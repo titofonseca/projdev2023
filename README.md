@@ -13,10 +13,12 @@ The project is composed of three main files:
 To setup the project, follow these steps:
 
 ### Client-side Setup
+
 - Clone the repository to your local machine.
 - Open the index.html file in a web browser.
 
 ### Server-side Setup (assuming you're using Node.js and Express)
+
 - Navigate to the root directory of the project.
 - Run npm install to install all dependencies.
 - Replace YOUR_CLIENT_ID in the meta tag within index.html with your actual Google client ID.
@@ -24,9 +26,13 @@ To setup the project, follow these steps:
 - Replace YOUR_VIEW_ID in server.js (or wherever you have placed your server-side code) with your actual View ID from Google Analytics.
 
 ## Usage
-Open the application in a web browser. Sign in with Google when prompted. Choose an account from the dropdown, and then click the "Fetch Data" button to get data from Google Analytics Reporting API.
+
+- Open the application in a web browser. 
+- Sign in with Google when prompted. 
+- Choose an account from the dropdown, and then click the "Fetch Data" button to get data from Google Analytics Reporting API.
 
 ## Dependencies
+
 #### The client-side code has dependencies on:
 
 - Google Platform Library

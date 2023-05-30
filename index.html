@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="google-signin-client_id" content="431217157687-qng9j24m9v30lk7005m0ads2r2crkicp.apps.googleusercontent.com"> 
+    <title>My API Project</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo"></div>
+        </div>
+        <div class="header-content">
+            <div class="account-icon">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div> 
+
+            <!-- Google Analytics Account Selector -->
+            <div class="account-selector-container">
+                <select id="accountSelector" disabled>
+                    <option value="">Select an account...</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>Feed'em Dev Project</h2>
+            <div class="input-container">
+                <input type="text" id="apiUrl" placeholder="Example: https://api.example.com" style="font-style: italic;">
+            </div>
+            <button id="fetchData">Fetch Data</button>
+            <table id="dataTable">
+              <thead>
+                <tr>
+                  <th>Source</th>
+                  <th>Sessions</th>
+                </tr>
+              </thead>
+              <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <!-- Add this line to include your JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
